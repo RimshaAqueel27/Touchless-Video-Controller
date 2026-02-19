@@ -82,7 +82,7 @@ Touchless-Video-Controller/
 **For Deployment (Jetson Nano):**
 - NVIDIA Jetson Nano
 - JetPack 4.4+ (TensorFlow 2.3.1)
-- USB or CSI Camera
+- USB Camera
 - MPV Media Player
 
 ---
