@@ -63,7 +63,6 @@ python3 media_control_mpv.py
 | **forward** | Skip +10s | Jump forward in video |
 | **reverse** | Skip -10s | Jump backward in video |
 | **volume_up** | Volume +5% | Hold for continuous increase |
-| **volume_down** | Volume -5% | Hold for continuous decrease |
 
 ---
 
@@ -84,7 +83,6 @@ python collect_data.py
 3. **reverse** - ✗ Not collected (target: 200+)
 4. **stop** - ✓ Complete  
 5. **volume_up** - ✗ Not collected (target: 200+)
-6. **volume_down** - ✗ Not collected (target: 200+)
 
 ---
 

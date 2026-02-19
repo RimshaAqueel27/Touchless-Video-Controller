@@ -151,7 +151,6 @@ stop            → cycle pause          → Pause (state-based)
 forward         → seek 10              → Skip +10 seconds
 reverse         → seek -10             → Skip -10 seconds
 volume_up       → add volume 10        → Volume +10%
-volume_down     → add volume -10       → Volume -10%
 
 ============================================================
 
@@ -164,7 +163,7 @@ Model Size (H5):      9.05 MB
 Model Size (TFLite):  8.48 MB (v1), 2.40 MB (v2)
 Architecture:         MobileNetV2 + Custom Classifier
 Input Size:           128×128×3
-Output Classes:       6 gestures
+Output Classes:       5 gestures
 Confidence Threshold: 90%
 Hold Time:            0.5 seconds
 

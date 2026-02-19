@@ -9,7 +9,7 @@
 ## 📌 Project Overview
 
 Control MPV media player on Jetson Nano using hand gestures captured by camera:
-- **6 Gestures:** play, stop, forward, reverse, volume_up, volume_down
+- **5 Gestures:** play, stop, forward, reverse, volume_up
 - **Model:** MobileNetV2 (pretrained) + custom classifier
 - **Deployment:** TensorFlow Lite (compatible with TF 2.3.1 on Jetson)
 - **Media Control:** MPV via IPC socket
@@ -27,7 +27,6 @@ Control MPV media player on Jetson Nano using hand gestures captured by camera:
 | 🔴 HIGH | **forward** | 80/200 images | Need 120+ more |
 | 🔴 HIGH | **reverse** | 0/200 images | Need 200+ |
 | 🟡 MEDIUM | **volume_up** | 0/200 images | Need 200+ |
-| 🟡 MEDIUM | **volume_down** | 0/200 images | Need 200+ |
 | ✅ DONE | play | 200+ images | Ready |
 | ✅ DONE | stop | 200+ images | Ready |
 
@@ -51,7 +50,7 @@ Control MPV media player on Jetson Nano using hand gestures captured by camera:
 **Usage:**
 ```python
 # Edit line to change gesture:
-gesture_name = "forward"  # or: reverse, volume_up, volume_down
+gesture_name = "forward"  # or: reverse, volume_up
 
 # Run:
 python collect_data.py
@@ -105,7 +104,6 @@ python create_compatible_tflite.py
 | forward | `playerctl position 10+` | Skip +10s |
 | reverse | `playerctl position 10-` | Skip -10s |
 | volume_up | `pactl +5%` (every 0.3s) | Continuous increase |
-| volume_down | `pactl -5%` (every 0.3s) | Continuous decrease |
 
 **Usage (on Jetson):**
 ```bash
@@ -149,7 +147,6 @@ dataset/
 ├── play/           ✅ 200+ images
 ├── reverse/        ❌ Empty (need 200+)
 ├── stop/           ✅ 200+ images
-├── volume_down/    ❌ Empty (need 200+)
 └── volume_up/      ❌ Empty (need 200+)
 ```
 
@@ -294,7 +291,7 @@ python collect_data.py
 - [ ] Collect 120+ more forward images
 - [ ] Collect 200+ reverse images  
 - [ ] Collect 200+ volume_up images
-- [ ] Collect 200+ volume_down images
+
 
 **Estimated time:** 50-60 minutes total
 

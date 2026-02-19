@@ -63,7 +63,7 @@ else:
                             if os.path.isdir(os.path.join(dataset_path, d))])
         print(f"⚠ Using class names from dataset folder")
     else:
-        class_names = ['forward', 'play', 'reverse', 'stop', 'volume_down', 'volume_up']
+        class_names = ['forward', 'play', 'reverse', 'stop', 'volume_up']
         print(f"⚠ Using default class names")
 
 print(f"  Classes: {class_names}")
@@ -81,8 +81,7 @@ MPV_COMMANDS = {
     'stop': {'command': ['cycle', 'pause']},  # Pause instead of stop
     'forward': {'command': ['seek', '10']},   # Skip forward 10 seconds
     'reverse': {'command': ['seek', '-10']},  # Skip backward 10 seconds
-    'volume_up': {'command': ['add', 'volume', '10']},    # Increase volume by 10%
-    'volume_down': {'command': ['add', 'volume', '-10']}  # Decrease volume by 10%
+    'volume_up': {'command': ['add', 'volume', '10']}     # Increase volume by 10%
 }
 
 def send_mpv_command(gesture):
@@ -267,8 +266,8 @@ while True:
                 is_playing = False
                 command_sent = True
                 last_detected_gesture = 'stop'
-        # Volume gestures have shorter cooldown (continuous control)
-        elif stable_gesture in ['volume_up', 'volume_down']:
+        # Volume gesture with shorter cooldown (continuous control)
+        elif stable_gesture == 'volume_up':
             if current_time - last_volume_change_time >= VOLUME_CHANGE_INTERVAL:
                 if send_mpv_command(stable_gesture):
                     last_volume_change_time = current_time

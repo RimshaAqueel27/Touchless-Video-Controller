@@ -10,13 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🎉 Initial Release
 
 #### Added
-- **6 hand gesture commands** for video control:
+- **5 hand gesture commands** for video control:
   - Play/Pause toggle
   - Stop (pause)
   - Forward (+10 seconds)
   - Reverse (-10 seconds)
   - Volume Up (+10%)
-  - Volume Down (-10%)
 - **PC Training Environment**:
   - Data collection script with auto-capture mode
   - MobileNetV2-based training pipeline

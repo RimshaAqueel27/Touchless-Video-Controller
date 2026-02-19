@@ -158,7 +158,7 @@ To add a new gesture:
    play
    reverse
    stop
-   volume_down
+
    volume_up
    new_gesture  ← Add here
    ```

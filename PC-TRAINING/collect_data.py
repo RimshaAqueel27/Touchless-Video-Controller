@@ -2,12 +2,12 @@ import cv2
 import os
 
 # Configuration
-gesture_name = "forward"  # Change this for each gesture: forward, play, reverse, stop, volume_up, volume_down
+gesture_name = "forward"  # Change this for each gesture: forward, play, reverse, stop, volume_up
 save_path = f"dataset/{gesture_name}"
 os.makedirs(save_path, exist_ok=True)
 
 # Check existing data for all gestures
-all_gestures = ["forward", "play", "reverse", "stop", "volume_up", "volume_down"]
+all_gestures = ["forward", "play", "reverse", "stop", "volume_up"]
 gesture_counts = {}
 TARGET_IMAGES = 200
 

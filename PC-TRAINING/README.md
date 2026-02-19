@@ -79,8 +79,7 @@ dataset/
 ├── stop/         ✅ 200+ images
 ├── forward/      ⚠️  80 images (need 120+ more)
 ├── reverse/      ❌ Empty (need 200+)
-├── volume_up/    ❌ Empty (need 200+)
-└── volume_down/  ❌ Empty (need 200+)
+└── volume_up/    ❌ Empty (need 200+)
 ```
 
 ### 📄 Documentation
@@ -101,7 +100,6 @@ dataset/
 | **forward** | `playerctl position 10+` | Skip forward 10 seconds |
 | **reverse** | `playerctl position 10-` | Skip backward 10 seconds |
 | **volume_up** | `pactl +5%` (every 0.3s) | Continuous increase while held |
-| **volume_down** | `pactl -5%` (every 0.3s) | Continuous decrease while held |
 
 ---
 

@@ -151,8 +151,7 @@ action_map = {
     'stop': 'Stop Playback',
     'forward': 'Skip Forward 10s',
     'reverse': 'Skip Backward 10s',
-    'volume_up': 'Volume +5% (hold for continuous)',
-    'volume_down': 'Volume -5% (hold for continuous)'
+    'volume_up': 'Volume +5% (hold for continuous)'
 }
 for gesture in gesture_classes:
     print(f"  {gesture:12} → {action_map.get(gesture, 'Unknown')}")
@@ -229,14 +228,13 @@ try:
         
         if confidence >= CONFIDENCE_THRESHOLD and gesture_stable_count >= STABLE_FRAMES_REQUIRED:
             
-            # Handle VOLUME gestures (continuous while holding)
-            if predicted_gesture in ['volume_up', 'volume_down']:
+            # Handle VOLUME gesture (continuous while holding)
+            if predicted_gesture == 'volume_up':
                 time_since_last_volume = current_time - last_volume_change_time
                 
                 if time_since_last_volume >= VOLUME_CHANGE_INTERVAL:
-                    direction = 'up' if predicted_gesture == 'volume_up' else 'down'
-                    if change_volume(direction):
-                        action_status = f"VOLUME {direction.upper()} (+5%)"
+                    if change_volume('up'):
+                        action_status = "VOLUME UP (+5%)"
                         status_color = (0, 255, 255)  # Cyan
                         last_gesture = predicted_gesture
                     else:

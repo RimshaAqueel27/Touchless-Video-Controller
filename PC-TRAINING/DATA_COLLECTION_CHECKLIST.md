@@ -11,7 +11,7 @@
 | **forward** | ⚠️ Partial | ~80 | ████████░░░░░░░░░░░░ 40% | COLLECT 120+ MORE |
 | **reverse** | ❌ Not Started | 0 | ░░░░░░░░░░░░░░░░░░░░ 0% | COLLECT 200+ |
 | **volume_up** | ❌ Not Started | 0 | ░░░░░░░░░░░░░░░░░░░░ 0% | COLLECT 200+ |
-| **volume_down** | ❌ Not Started | 0 | ░░░░░░░░░░░░░░░░░░░░ 0% | COLLECT 200+ |
+
 
 **Overall Progress:** 2/6 gestures complete (33.33%)
 
@@ -28,7 +28,7 @@ python collect_data.py
 ### Step 2: Edit gesture_name
 Edit Line 11 in `collect_data.py`:
 ```python
-gesture_name = "forward"  # Change to: forward, reverse, volume_up, volume_down
+gesture_name = "forward"  # Change to: forward, reverse, volume_up
 ```
 
 ### Step 3: Collection Tips
@@ -62,11 +62,6 @@ gesture_name = "forward"  # Change to: forward, reverse, volume_up, volume_down
 - **Hand Position:** Thumb up 👍
 - **Tips:** Clear thumb, other fingers closed
 
-### volume_down
-- **Action:** Decrease volume -5% continuously
-- **Hand Position:** Thumb down 👎
-- **Tips:** Clear thumb, other fingers closed
-
 ---
 
 ## ⏱️ Collection Schedule
@@ -75,11 +70,10 @@ gesture_name = "forward"  # Change to: forward, reverse, volume_up, volume_down
 1. **forward** (Need 120+ more) - HIGH PRIORITY
 2. **reverse** (Need 200+) - HIGH PRIORITY
 3. **volume_up** (Need 200+)
-4. **volume_down** (Need 200+)
 
 ### Estimated Time:
 - 10-15 minutes per gesture (200 images with auto-capture)
-- **Total remaining:** ~50-60 minutes
+- **Total remaining:** ~35-45 minutes
 
 ---
 

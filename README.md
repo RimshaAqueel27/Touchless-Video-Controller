@@ -19,7 +19,7 @@ A real-time hand gesture recognition system for touchless media control, optimiz
 
 ## ✨ Features
 
-- 🎯 **6 Gesture Commands**: Play/Pause, Stop, Forward, Reverse, Volume Up/Down
+- 🎯 **5 Gesture Commands**: Play/Pause, Stop, Forward, Reverse, Volume Up
 - ⚡ **Real-time Performance**: ~30 FPS on Jetson Nano
 - 🚀 **Edge Optimized**: TensorFlow Lite model (8.5 MB)
 - 🎬 **MPV Integration**: Direct IPC socket control
@@ -39,7 +39,6 @@ A real-time hand gesture recognition system for touchless media control, optimiz
 | 👉 **Forward** | Skip ahead | +10 seconds |
 | 👈 **Reverse** | Skip back | -10 seconds |
 | 👆 **Volume Up** | Increase volume | +10% (continuous) |
-| 👇 **Volume Down** | Decrease volume | -10% (continuous) |
 
 ---
 
@@ -53,7 +52,7 @@ Touchless-Video-Controller/
 │   ├── create_compatible_tflite.py # Convert to TFLite (Jetson compatible)
 │   ├── test_model.py               # Test trained model
 │   ├── requirements_pc.txt         # PC dependencies
-│   ├── dataset/                    # Training images (6 gesture folders)
+│   ├── dataset/                    # Training images (5 gesture folders)
 │   └── README.md                   # Detailed PC training guide
 │
 ├── JETSON-NANO-PROJECT/            # Deployment (Jetson Nano)
@@ -98,7 +97,7 @@ cd Touchless-Video-Controller/PC-TRAINING
 # Install dependencies
 pip install -r requirements_pc.txt
 
-# Collect training data (200+ images per gesture)
+# Collect training data (200+ images per gesture, 5 gestures)
 python collect_data.py
 
 # Train the model
@@ -166,7 +165,7 @@ python train_model.py
 **Model Architecture:**
 - Base: MobileNetV2 (ImageNet pretrained)
 - Input: 128×128×3 RGB images
-- Output: 6 classes (gestures)
+- Output: 5 classes (gestures)
 - Optimizer: Adam
 - Loss: Categorical Crossentropy
 
@@ -278,7 +277,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 **Ideas for Contribution:**
-- Add new gesture commands
+- Add new gesture commands (volume down, brightness, etc.)
 - Improve model accuracy
 - Add support for other media players (VLC, etc.)
 - Create mobile app version
