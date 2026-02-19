@@ -203,7 +203,7 @@ python3 media_control_mpv.py
 | Metric | Value |
 |--------|-------|
 | **Validation Accuracy** | 96.67% |
-| **Inference Speed (Jetson)** | ~30 FPS |
+| **Inference Speed (Jetson)** | ~25 FPS |
 | **Model Size (H5)** | 9.05 MB |
 | **Model Size (TFLite)** | 8.48 MB |
 | **Latency** | ~33-50 ms |
