@@ -1,0 +1,6 @@
+forward
+play
+reverse
+stop
+volume_down
+volume_up
