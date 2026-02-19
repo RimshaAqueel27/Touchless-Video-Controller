@@ -36,7 +36,7 @@ The system includes predefined gestures mapped to specific media player actions.
 
 | Gesture | Description | Media Action | Command |
 |---------|-------------|--------------|---------|
-| **Play** | Open palm facing camera | Toggle Play/Pause | `cycle pause` |
+| **Play** | Open palm facing camera | Toggle Play       | `cycle play` |
 | **Stop** | Closed fist | Pause video | `set pause yes` |
 | **Forward** | Left hand thumb pointing right while all fingers are closed | Skip +10 seconds | `seek +10` |
 | **Reverse** | Left hand thumb pointing left while all fingers are closed (facing towards user) | Skip -10 seconds | `seek -10` |
