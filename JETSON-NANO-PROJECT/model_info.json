@@ -1,0 +1,16 @@
+{
+  "class_names": [
+    "forward",
+    "play",
+    "reverse",
+    "stop",
+    "volume_down",
+    "volume_up"
+  ],
+  "input_shape": [
+    128,
+    128,
+    3
+  ],
+  "model_version": "v1.0"
+}
