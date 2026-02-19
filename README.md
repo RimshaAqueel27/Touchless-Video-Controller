@@ -30,15 +30,17 @@ A real-time hand gesture recognition system for touchless media control, optimiz
 
 ---
 
-## 🎮 Supported Gestures
+## 🎮 Gesture Mapping Table
 
-| Gesture | Action | Behavior |
-|---------|--------|----------|
-| 👋 **Play** | Toggle playback | Play/Pause video |
-| ✋ **Stop** | Pause video | Pause (state-based) |
-| 👉 **Forward** | Skip ahead | +10 seconds |
-| 👈 **Reverse** | Skip back | -10 seconds |
-| 👆 **Volume Up** | Increase volume | +10% (continuous) |
+The system includes predefined gestures mapped to specific media player actions.
+
+| Gesture | Description | Media Action | Command |
+|---------|-------------|--------------|---------|
+| **Play** | Open palm facing camera | Toggle Play/Pause | `cycle pause` |
+| **Stop** | Closed fist | Pause video | `set pause yes` |
+| **Forward** | Left hand thumb pointing right while all fingers are closed | Skip +10 seconds | `seek +10` |
+| **Reverse** | Left hand thumb pointing left while all fingers are closed (facing towards user) | Skip -10 seconds | `seek -10` |
+| **Volume Up** | Index finger pointing up | Increase volume +10 | `add volume 10` |
 
 ---
 
