@@ -301,12 +301,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📧 Contact
-
-**Project Link:** [https://github.com/yourusername/Touchless-Video-Controller](https://github.com/yourusername/Touchless-Video-Controller)
-
----
-
 ## 🗺️ Roadmap
 
 - [x] Basic gesture recognition
@@ -322,5 +316,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ for the Jetson Nano community
+  Made with ❤️ for the Edge AI community
 </p>
